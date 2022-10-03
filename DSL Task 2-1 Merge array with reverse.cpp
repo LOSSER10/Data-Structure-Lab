@@ -3,42 +3,21 @@ using namespace std;
 
 int main(){
 
-int n1,n2,n3,i;
-int arr1[100],arr2[100],arrmerge[200];
 
-cout<<"Enter the size for first array : "<<endl;
-cin>>n1;
-cout<<"Enter "<<n1<<" elements for first array "<<endl;
-	
-for(i=n1-1;i>=0;i--){
-	cin>>arr1[i];
-	
+	int i,j,n,k;
+int arr1[5]={1,2,3,4,5};
+int arr2[5]={6,7,8,9,10};
+int arr3[11];
+
+for(i=0,j=4,k=4;i<5,j>=0,k>=0;i++,j--,k--){
+
+    arr3[j]=arr1[i];
+
+    arr3[i+5]=arr2[k];
+
 }
 
-cout<<"Enter the size for Second array : "<<endl;
-cin>>n2;
-cout<<"Enter "<<n2<<" elements for first array "<<endl;	
-	
-for(i=n2-1;i>=0;i--){
-	cin>>arr2[i];	
-	
-     n3=n1+n2;                                                                                           	
-}
-
-for(i=0;i<n1;i++){
-	
-	arrmerge[i]=arr1[i];
-}
-for(i=0;i<n2;i++){
-
-	arrmerge[n1+i]=arr2[i];
-	
-}
-cout<<"Your merged array is : ";
-for(i=n3;i<1;i++){
-	cout<<arrmerge[i]<<" ";
-	
-	}
-return 0;
+for(n=0;n<10;n++){
+      cout<<arr3[n];
 
 }
