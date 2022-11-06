@@ -4,8 +4,8 @@ using namespace std;
 int main(){
 int i,c,r,row1,row2,row,col;
 int arr1[20][20];
-int arr2[20];
-int arr3[20];
+//int arr2[20];
+//int arr3[20];
 cout<<"Enter the number of row : "<<endl;
 cin>>r;
 cout<<"Enter the number of colume : "<<endl;
